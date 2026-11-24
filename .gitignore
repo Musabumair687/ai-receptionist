@@ -1,8 +1,15 @@
 ﻿# Environment & secrets
 .env
 .env.*
+*.env
+.envrc
 !.env.example
-!backend/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/credentials
+.npmrc.local
 
 # Python & virtual environments
 __pycache__/
@@ -14,18 +21,33 @@ ENV/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
 
 # Node.js & Next.js
 node_modules/
+.npm-cache/
 .next/
 out/
 build/
 dist/
 *.tsbuildinfo
+next-env.d.ts
+.turbo/
+coverage/
 
 # Logs & OS / editor clutter
 *.log
 .DS_Store
 Thumbs.db
-.vscode/*
-!.vscode/extensions.json
+**/.vscode/*
+!**/.vscode/extensions.json
+
+# Local Codex files (keep locally, do not push)
+AGENTS.md
+backend/AGENTS.md
+frontend/AGENTS.md
+docs/PROJECT_PLAN.md
+docs/DECISIONS.md
