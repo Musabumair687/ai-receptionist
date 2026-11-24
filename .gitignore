@@ -1,0 +1,31 @@
+﻿# Environment & secrets
+.env
+.env.*
+!.env.example
+!backend/.env.example
+
+# Python & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node.js & Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# Logs & OS / editor clutter
+*.log
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
